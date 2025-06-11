@@ -1,0 +1,64 @@
+{
+  "Items": [
+    {
+      "PlayerCharacterID": "PC0000",
+      "Type": 0,
+      "Description": "건장한 남성.",
+      "MaxHP": 100,
+      "MaxMP": 100,
+      "MaxStamina": 100,
+      "WalkSpeed": 1,
+      "RunSpeed": 5,
+      "Strength": 10,
+      "Intelligence": 5,
+      "Charisma": 5,
+      "Luck": 5,
+      "Defense": 5
+    },
+    {
+      "PlayerCharacterID": "PC0001",
+      "Type": 1,
+      "Description": "어여쁜 여성.",
+      "MaxHP": 100,
+      "MaxMP": 100,
+      "MaxStamina": 100,
+      "WalkSpeed": 1,
+      "RunSpeed": 5,
+      "Strength": 5,
+      "Intelligence": 10,
+      "Charisma": 5,
+      "Luck": 5,
+      "Defense": 5
+    },
+    {
+      "PlayerCharacterID": "PC0002",
+      "Type": 2,
+      "Description": "중후한 남성.",
+      "MaxHP": 100,
+      "MaxMP": 100,
+      "MaxStamina": 100,
+      "WalkSpeed": 1,
+      "RunSpeed": 5,
+      "Strength": 5,
+      "Intelligence": 5,
+      "Charisma": 10,
+      "Luck": 5,
+      "Defense": 5
+    },
+    {
+      "PlayerCharacterID": "PC0003",
+      "Type": 3,
+      "Description": "노련한 여성.",
+      "MaxHP": 100,
+      "MaxMP": 100,
+      "MaxStamina": 100,
+      "WalkSpeed": 2,
+      "RunSpeed": 5,
+      "Strength": 5,
+      "Intelligence": 5,
+      "Charisma": 5,
+      "Luck": 10,
+      "Defense": 5
+    }
+  ]
+}
