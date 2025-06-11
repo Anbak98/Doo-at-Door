@@ -5,31 +5,45 @@ namespace DD.Character.Player
 {    
     public class PlayerCharacterController : MonoBehaviour
     {
-        [Header("Components")]
-        [SerializeField] private Transform _characterTransform;
+        [Header("Components on Prefab")]
+        [SerializeField] private Transform _root;
         [SerializeField] private PlayerCharacterStatHandler _status;
+        [SerializeField] private PlayerCharacterRender      _render;
 
-        private float _acceleration = 1f;
-
-        private void Update()
+        private void FixedUpdate()
         {
-            if (InputActionManager.Instance.GetCharacterInput(out SPlayerCharacterInput input))
+            if (InputActionManager.Instance.GetCharacterInput(out var input))
             {
-                MoveCharacter(input.moveInput);
+                if (input.MoveInput.magnitude > 0)
+                {
+                    _status.SetSpeed(EMoveType.Walk);   
+                }
+                else
+                {
+                    _status.SetSpeed(EMoveType.Idle);
+                }
+
+                if (input.MoveInput.x < 0)
+                {
+                    _render.IsFlip = true;
+                }
+                else if (input.MoveInput.x > 0)
+                {
+                    _render.IsFlip = false;
+                }
+
+                MoveCharacter(input.MoveInput);
             }
         }
 
-        public void SetStatus(float acceleration = float.MinValue)
+        private void LateUpdate()
         {
-            if (acceleration != float.MinValue)
-            {
-                _acceleration = acceleration;
-            }
+            _render.Render();
         }
 
         private void MoveCharacter(Vector3 moveInput)
         {
-            _characterTransform.position += _acceleration * Time.deltaTime * moveInput;
+            _root.position += _status.CurSpeed * Time.deltaTime * moveInput;
         }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class InputActionHandlerUI
 {
-    public void Init(PlayerInputAction.UIActions uiInputActions)
+    public InputActionHandlerUI(PlayerInputAction.UIActions uiInputActions)
     {
     }
 }

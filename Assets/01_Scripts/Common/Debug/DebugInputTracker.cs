@@ -8,7 +8,7 @@ public class DebugInputTracker : MonoBehaviour
         if(InputActionManager.Instance.GetCharacterInput(out var input))
         {
             GUILayout.Label(
-                "Move: " + input.moveInput + "\n" +
+                "Move: " + input.MoveInput + "\n" +
                 "Interact: " + input.IsInteract
                 );
         }
