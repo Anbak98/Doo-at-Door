@@ -1,0 +1,162 @@
+2025-06-11 오후 6:07:11: Error processing sheet Item (2) in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Item.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:07:11: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:07:11: Error processing sheet Quest in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:07:38: Error processing sheet Item (2) in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Item.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:07:38: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:07:38: Error processing sheet Quest in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:14:28: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Item.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Item.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 244
+2025-06-11 오후 6:14:28: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 244
+2025-06-11 오후 6:14:28: Error processing sheet Quest in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:18:31: Error processing sheet Item (2) in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Item.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:18:32: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:18:32: Error processing sheet Quest in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The first column must be 'key'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 279
+2025-06-11 오후 6:21:27: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The type of the first column must be 'int'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 284
+2025-06-11 오후 6:21:27: Error processing sheet Quest in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The type of the first column must be 'int'.
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 284
+2025-06-11 오후 6:22:37: Error converting value '30002' for variable 'DropItem' in sheet 'Monster' of file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx': Unsupported data type: int[]
+   at ExcelToJsonWizard.Program.ConvertToType(String value, String type, String variableName, String logFilePath, String excelPath, String sheetName) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 503
+2025-06-11 오후 6:22:37: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: Unsupported data type: int[]
+   at ExcelToJsonWizard.Program.ConvertToType(String value, String type, String variableName, String logFilePath, String excelPath, String sheetName) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 503
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 341
+2025-06-11 오후 6:23:33: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 244
+2025-06-11 오후 6:23:52: Error converting value '30002' for variable 'DropItem' in sheet 'Monster' of file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx': Unsupported data type: int[]
+   at ExcelToJsonWizard.Program.ConvertToType(String value, String type, String variableName, String logFilePath, String excelPath, String sheetName) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 503
+2025-06-11 오후 6:23:52: Error processing sheet Monster in file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Monster.xlsx: Unsupported data type: int[]
+   at ExcelToJsonWizard.Program.ConvertToType(String value, String type, String variableName, String logFilePath, String excelPath, String sheetName) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 503
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 341
+2025-06-11 오후 7:47:45: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\Quest.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 244
+2025-06-11 오후 8:34:56: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\MonsterInfo.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\MonsterInfo.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 246
+2025-06-11 오후 8:34:56: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\PlayerInfo.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\PlayerInfo.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 246
+2025-06-11 오후 8:35:31: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\MonsterInfo.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\MonsterInfo.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 246
+2025-06-11 오후 8:35:31: Error processing file C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\PlayerInfo.xlsx: The process cannot access the file 'C:\Users\anbak\Doo-at-Door\Util\ExcelToJsonWizard\excel_files\PlayerInfo.xlsx' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.Packaging.ZipPackage..ctor(String path, FileMode packageFileMode, FileAccess packageFileAccess, FileShare share)
+   at System.IO.Packaging.Package.Open(String path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+   at DocumentFormat.OpenXml.Packaging.PackageLoader.OpenCore(String path, Boolean readWriteMode)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable, OpenSettings openSettings)
+   at DocumentFormat.OpenXml.Packaging.SpreadsheetDocument.Open(String path, Boolean isEditable)
+   at ClosedXML.Excel.XLWorkbook.LoadSheets(String fileName)
+   at ClosedXML.Excel.XLWorkbook.Load(String file)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file, LoadOptions loadOptions)
+   at ClosedXML.Excel.XLWorkbook..ctor(String file)
+   at ExcelToJsonWizard.Program.GenerateClassAndJsonFromExcel(String excelPath, String loaderDir, String jsonDir, String logFilePath, Boolean allowMultipleSheets, Boolean useResources, String resourcesInternalPath) in C:\Users\anbak\ExcelToJsonWizard\ExcelToJsonWizard\ExcelToJsonWizard\Program.cs:line 246
