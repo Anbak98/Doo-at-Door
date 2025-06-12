@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bd65674808b4fd5408118a3f4f315c7a
+  m_SerializeEntries:
+  - m_GUID: e913c07f70e8565439501021195d008b
+    m_Address: Assets/02_Prefabs/Characters/Monster/Enemy0.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8eeb3f9ab4c49c459e87b790a3be6e4
+    m_Address: Assets/02_Prefabs/Characters/Player/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 906a5b52ad677304488da760e55c1e65
+    m_Address: Assets/02_Prefabs/Items/Item.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4440819e600e840409e5d5effc803aa7
+    m_Address: Assets/02_Prefabs/Characters/Monster/Enemy1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d66e3311ad6c5704993fab47a9725e44
+    m_Address: Assets/02_Prefabs/Characters/Monster/Enemy2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 689058861da57af4fa82bc978416faac
+    m_Address: Assets/02_Prefabs/Characters/Monster/Enemy3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5ee269df516281419876f9b73a3e2c0
+    m_Address: Assets/02_Prefabs/Characters/Monster/Enemy4.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5fa8c6912eb02d40b67da7ba98c0084
+    m_Address: Assets/04_ScriptableObjects/MonsterObjectData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ff5c461179b81c2428b740f397b7e1e6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0aadb03322d61934ba8458678c8e3282, type: 2}
+    - {fileID: 11400000, guid: 3504d115699468b4a9cabd36786f56af, type: 2}
