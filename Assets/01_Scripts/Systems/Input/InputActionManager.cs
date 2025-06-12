@@ -38,5 +38,11 @@ namespace DD.System.Input
 
             return true;
         }
+        public bool GetUIInput(out InputActionHandlerUI input)
+        {
+            input = _uiInputHandler;
+
+            return true;
+        }
     }
 }

@@ -107,6 +107,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""P"",
+                    ""type"": ""Button"",
+                    ""id"": ""e380e421-ffbf-4713-ba72-ca0e7907ace9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -118,6 +127,17 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Setting"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""886714da-fc5e-491f-9991-262bb9362c3f"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""P"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -132,6 +152,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Setting = m_UI.FindAction("Setting", throwIfNotFound: true);
+        m_UI_P = m_UI.FindAction("P", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -240,11 +261,13 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_UI;
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
     private readonly InputAction m_UI_Setting;
+    private readonly InputAction m_UI_P;
     public struct UIActions
     {
         private @PlayerInputAction m_Wrapper;
         public UIActions(@PlayerInputAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @Setting => m_Wrapper.m_UI_Setting;
+        public InputAction @P => m_Wrapper.m_UI_P;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -257,6 +280,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Setting.started += instance.OnSetting;
             @Setting.performed += instance.OnSetting;
             @Setting.canceled += instance.OnSetting;
+            @P.started += instance.OnP;
+            @P.performed += instance.OnP;
+            @P.canceled += instance.OnP;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -264,6 +290,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Setting.started -= instance.OnSetting;
             @Setting.performed -= instance.OnSetting;
             @Setting.canceled -= instance.OnSetting;
+            @P.started -= instance.OnP;
+            @P.performed -= instance.OnP;
+            @P.canceled -= instance.OnP;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -288,5 +317,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     public interface IUIActions
     {
         void OnSetting(InputAction.CallbackContext context);
+        void OnP(InputAction.CallbackContext context);
     }
 }
