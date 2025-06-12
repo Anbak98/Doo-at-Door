@@ -9,15 +9,15 @@ namespace DD.Character.Player
         Idle
     }
 
-    public class PlayerCharacterStatHandler : MonoBehaviour
+    public class PlayerCharacterStatHandler
     {
-        private PlayerInfo _info;
+        private readonly PlayerInfo _info;
         public int CurHP { get; private set; } = int.MinValue;
         public int CurMP { get; private set; } = int.MinValue;
         public int CurStamina { get; private set; } = int.MinValue;
         public float CurSpeed { get; private set; } = float.NaN;
 
-        public void Init(PlayerInfo Playerinfo)
+        public PlayerCharacterStatHandler(PlayerInfo Playerinfo)
         {
             _info = Playerinfo;
 

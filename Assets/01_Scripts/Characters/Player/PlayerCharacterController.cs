@@ -3,45 +3,18 @@ using DD.System.Input;
 
 namespace DD.Character.Player
 {    
-    public class PlayerCharacterController : MonoBehaviour
+    public class PlayerCharacterController
     {
-        [Header("Components on Prefab")]
-        [SerializeField] private Transform _root;
-        [SerializeField] private PlayerCharacterStatHandler _status;
-        [SerializeField] private PlayerCharacterRender      _render;
+        private Transform _root;
+        private PlayerCharacterStatHandler _status;
 
-        private void FixedUpdate()
+        public PlayerCharacterController(Transform root, PlayerCharacterStatHandler status)
         {
-            if (InputActionManager.Instance.GetCharacterInput(out var input))
-            {
-                if (input.MoveInput.magnitude > 0)
-                {
-                    _status.SetSpeed(EMoveType.Walk);   
-                }
-                else
-                {
-                    _status.SetSpeed(EMoveType.Idle);
-                }
-
-                if (input.MoveInput.x < 0)
-                {
-                    _render.IsFlip = true;
-                }
-                else if (input.MoveInput.x > 0)
-                {
-                    _render.IsFlip = false;
-                }
-
-                MoveCharacter(input.MoveInput);
-            }
+            _root = root;
+            _status = status;
         }
 
-        private void LateUpdate()
-        {
-            _render.Render();
-        }
-
-        private void MoveCharacter(Vector3 moveInput)
+        public void MoveCharacter(Vector3 moveInput)
         {
             _root.position += _status.CurSpeed * Time.deltaTime * moveInput;
         }

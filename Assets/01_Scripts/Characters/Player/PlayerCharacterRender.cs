@@ -5,16 +5,17 @@ namespace DD.Character.Player
 {
     public class PlayerCharacterRender : MonoBehaviour
     {
-        [SerializeField] private PlayerCharacterStatHandler _status;
+        private PlayerCharacterStatHandler _status;
+
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator _anmator;
-        [SerializeField] private AnimatorOverrideController[] characterOverrides; // 0 ~ 5번 캐릭터용
 
         public bool IsFlip = false;
 
-        public void Init(int characyerIndex)
+        public void Init(PlayerCharacterStatHandler status, AnimatorOverrideController animatorOverride)
         {
-            _anmator.runtimeAnimatorController = characterOverrides[characyerIndex];
+            _status = status;
+            _anmator.runtimeAnimatorController = animatorOverride;
         }
 
         public void Render()
